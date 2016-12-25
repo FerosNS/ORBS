@@ -1,0 +1,25 @@
+import React, { Component } from 'react';
+import { Link } from 'react-router';
+
+export default class Suggested extends Component {
+
+    get_popular_orbs () {
+        return [
+            <li key="option1" className="orbs-panel-option"><i className="fa fa-user"></i>Option 1</li>,
+            <li key="option2" className="orbs-panel-option"><i className="fa fa-user"></i>Option 2</li>,
+            <li key="option3" className="orbs-panel-option"><i className="fa fa-user"></i>Option 3</li>,
+            <li key="option4" className="orbs-panel-option"><i className="fa fa-user"></i>Option 4</li>
+        ];
+    }
+
+    render () {
+        return (
+            <div className="orbs-nav-panel">
+                <h4>Popular Orbs</h4>
+                <ul className="orbs-panel-options">
+                    { this.get_popular_orbs() }
+                </ul>
+            </div>
+        );
+    }
+}

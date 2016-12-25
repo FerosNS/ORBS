@@ -8,6 +8,9 @@ export default class ORBS extends Component {
             <div id="orbs-container" className="container-fluid">
                 <Header />
                 <Sidebar />
+                <div className="orbs-nav-container">
+                    { this.props.children }
+                </div>
             </div>
         );
     }
