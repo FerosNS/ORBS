@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Header from './modules/header';
 import Sidebar from './modules/sidebar';
+import Startup from './modules/creators/startup';
 
 export default class ORBS extends Component {
     render () {
@@ -10,6 +11,9 @@ export default class ORBS extends Component {
                 <Sidebar />
                 <div className="orbs-nav-container">
                     { this.props.children }
+                </div>
+                <div className="orbs-main-container">
+                    <Startup />
                 </div>
             </div>
         );

@@ -5,8 +5,9 @@ export default class Header extends Component {
     render () {
 
         const INFO = {
-            title : "Welcome to ORBS! Select a world to start in or start creating your own!"
+            title : "Welcome! Select a world to join or start creating your own!"
         }
+        
         return (
             <header className="row">
                 <div className="col-sm-3">

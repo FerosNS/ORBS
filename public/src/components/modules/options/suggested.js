@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router';
 
 export default class Suggested extends Component {
-
+    //Database call
     get_popular_orbs () {
         return [
             <li key="option1" className="orbs-panel-option"><i className="fa fa-user"></i>Option 1</li>,

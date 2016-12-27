@@ -1,5 +1,5 @@
 body {
-    font-family: SourceSansLocal, Source Sans Pro, Helvetica;
+    font-family: "Space Mono", Source Sans Pro, Helvetica;
     background-color: #333;
     color: #777;
     overflow: hidden;
@@ -88,4 +88,8 @@ h4 {
 .orbs-panel-option i {
     margin-right: 15px;
     font-size: 1.5em;
+}
+.orbs-main-container {
+    position: absolute;
+    left: 320px;
 }
