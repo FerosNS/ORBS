@@ -2,12 +2,17 @@ import React, { Component } from 'react';
 import { Link } from 'react-router';
 
 export default class Header extends Component {
+    constructor () {
+        super();
+        this.state = {};
+    }
+
     render () {
 
         const INFO = {
             title : "Welcome! Select a world to join or start creating your own!"
         }
-        
+
         return (
             <header className="row">
                 <div className="col-sm-3">
