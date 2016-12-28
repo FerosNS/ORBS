@@ -181,8 +181,19 @@ hr.rev {
     height: 100%;
     padding-bottom: 100px;
 }
+.content {
+    margin-top: 50px;
+    border: 1px solid #999;
+    padding: 20px;
+    border-radius: 10px;
+}
+.forum-description {
+    display: block;
+    margin-top: 10px;
+}
 /* Overrides */
 .no-select:hover {
     cursor: default !important;
     background: #333 !important;
+    color: #777 !important;
 }

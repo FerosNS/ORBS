@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Header from './modules/header';
 import Sidebar from './modules/sidebar';
-import Startup from './modules/creators/startup';
+import Startup from './modules/startup';
 
 export default class ORBS extends Component {
 
