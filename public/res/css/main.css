@@ -1,8 +1,21 @@
+/*
+    1. Main Tags
+    2. General Classes
+    3. Header
+    4. Sidebar
+    5. Options
+    6. Main
+ */
+/* 1. Main Tags */
+html, body {
+    height: 100%;
+    margin: 0;
+}
 body {
     font-family: "Space Mono", Source Sans Pro, Helvetica;
     background-color: #333;
     color: #777;
-    overflow: hidden;
+    overflow-y: hidden;
 }
 header {
     background-color: #222;
@@ -35,9 +48,6 @@ nav li {
     padding-top: 20%;
     margin-bottom: 20px;
 }
-.active {
-    border-left: 2px solid #fff;
-}
 li {
     list-style: none;
     width: 100%;
@@ -48,17 +58,26 @@ a, a:visited {
 }
 a:hover {
     color: #555;
+    cursor: pointer;
 }
 h4 {
     font-size: 1.1em;
     margin-bottom: 25px;
     padding-left: 20px;
 }
-.brand {
-    color: #ccc;
+hr {
+    background: #999;
+    width: 90%;
 }
-.brand a:hover {
-    text-decoration: none;
+hr.rev {
+    background: #111;
+}
+/* 2. General Classes */
+.active {
+    border-left: 2px solid #fff;
+}
+.hidden {
+    display: none;
 }
 .fa {
     font-size: 2em;
@@ -66,6 +85,28 @@ h4 {
 .pull-right {
     margin-right: 10px;
 }
+/* 3. Header */
+.brand {
+    color: #ccc;
+}
+.brand a:hover {
+    text-decoration: none;
+}
+.profile {
+    position: absolute;
+    width: 150px;
+    margin-top: 50px;
+    left: 155px;
+    font-size: 0.7em;
+    background: #ccc;
+    padding: 5px;
+    z-index: 100;
+}
+.profile-tab {
+    display: block;
+    margin: 10px 0;
+}
+/* 4. Sidebar */
 .orbs-nav-container {
     position: absolute;
     height: 100%;
@@ -73,15 +114,17 @@ h4 {
     left: 80px;
     border-right: 2px solid #222;
     padding-top: 25px;
-    padding-right: 10px;
 }
 .orbs-panel-options li {
     height: 30px;
     padding-left: 20px;
+    width: 100%;
 }
 .orbs-panel-options li:hover {
     background: #222;
+    cursor: pointer;
 }
+/* 5. Options */
 .orbs-panel-option {
     width: 100%;
 }
@@ -89,7 +132,19 @@ h4 {
     margin-right: 15px;
     font-size: 1.5em;
 }
+/* 6. Main */
 .orbs-main-container {
     position: absolute;
     left: 320px;
+    padding: 20px;
+    width: 75%;
+}
+.title {
+    text-align: center;
+}
+#main {
+    display: block;
+    overflow-y: scroll;
+    height: 100%;
+    padding-bottom: 100px;
 }

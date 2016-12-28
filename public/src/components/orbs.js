@@ -4,6 +4,7 @@ import Sidebar from './modules/sidebar';
 import Startup from './modules/creators/startup';
 
 export default class ORBS extends Component {
+
     render () {
         return (
             <div id="orbs-container" className="container-fluid">
@@ -12,7 +13,7 @@ export default class ORBS extends Component {
                 <div className="orbs-nav-container">
                     { this.props.children }
                 </div>
-                <div className="orbs-main-container">
+                <div id="main" className="orbs-main-container">
                     <Startup />
                 </div>
             </div>

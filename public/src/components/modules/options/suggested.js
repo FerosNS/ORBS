@@ -16,6 +16,7 @@ export default class Suggested extends Component {
         return (
             <div className="orbs-nav-panel">
                 <h4>Popular Orbs</h4>
+                <hr />
                 <ul className="orbs-panel-options">
                     { this.get_popular_orbs() }
                 </ul>
