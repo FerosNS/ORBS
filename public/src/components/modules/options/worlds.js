@@ -6,10 +6,10 @@ export default class Worlds extends Component {
     //Database call
     get_user_orbs () {
         return [
-            <li key="option1" className="orbs-panel-option"><i className="fa fa-frown-o"></i>You have not created any Orbs yet!</li>
+            <li key="option1" className="orbs-panel-option no-select"><i className="fa fa-frown-o"></i>You have not created any Orbs yet!</li>
         ];
     }
-    
+
     render () {
         return (
             <div className="orbs-nav-panel">
@@ -17,6 +17,9 @@ export default class Worlds extends Component {
                 <ul className="orbs-panel-options">
                     { this.get_user_orbs() }
                 </ul>
+                <span>
+                    <Link to="/create-world" className="btn btn-primary">Create World!</Link>
+                </span>
             </div>
         );
     }
