@@ -1,0 +1,21 @@
+header {
+    position: relative;
+    min-height: 335px;
+}
+.navbar-brand {
+    font-size: 1.75em;
+}
+.header-content {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    color: #fff;
+}
+#main-nav {
+    position: relative;
+    top: -25px;
+    color: #fff;
+    background: $panel-bg;
+}
