@@ -48,26 +48,103 @@
                 </header>
             </div>
             <div class="row">
-                <div id="main-nav" class="main-nav" style="height: 69px;">
+                <div id="main-nav" class="main-nav">
                     <div class="container">
-                        <div class="header-search-bar pull-right">
-                            <form action="" method="GET">
-                                <div class="input-group">
-                                    <input type="text" name="keywords" class="form-control" placeholder="Search...">
-                                    <span class="input-group-btn">
-                                        <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
-                                    </span>
+                        <div class="row">
+                            <div class="col-lg-9">
+                                <ul class="nav navbar-nav pull-left">
+                                    <li><a href="#tab1" data-toggle="tab"><i class="fa fm fa-navicon"></i> Quick Links</a></li>
+                                    <li><a href="/FAQ/" title="Frequently Asked Questions"><i class="fa fm fa-question-circle"></i> FAQ</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="header-search-bar">
+                                    <form action="" method="GET">
+                                        <div class="input-group">
+                                            <input type="text" name="keywords" class="form-control" placeholder="Search...">
+                                            <span class="input-group-btn">
+                                                <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+                                                <button href="#" class="btn btn-default"><i class="fa fa-gear"></i></button>
+                                            </span>
+                                        </div>
+                                    </form>
                                 </div>
-                            </form>
+                            </div>
                         </div>
-                        <div></div>
+                    </div>
+                    <div class="header-tab">
+                        <div class="container">
+                            <div class="tab-content">
+                                <div class="tab-pane" id="tab1">
+                                    <ul class="nav">
+                                        <li><a href="#"><i class="fa fm fa-comment-o"></i> Join World</a></li>
+                                        <li><a href="#"><i class="fa fm fa-comment-o"></i> Join World</a></li>
+                                        <li><a href="#"><i class="fa fm fa-comment-o"></i> Join World</a></li>
+                                        <li><a href="#"><i class="fa fm fa-comment-o"></i> Join World</a></li>
+                                        <li><a href="#"><i class="fa fm fa-comment-o"></i> Join World</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             @show
-            <div class="content">
+            <div class="row content">
                 @yield('content')
             </div>
+
+            @section('footer')
+                <div class="row">
+                <footer id="footer">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 footer-widget">
+                                <h4>About us</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque voluptates maiores at, quae minima iusto aliquam eveniet hic a consequatur numquam sunt consectetur, veniam ab esse culpa odit laudantium. Debitis.</p>
+                                <div class="social">
+                                    <ul>
+                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 footer-widget">
+                                <div class="footer-subscriber">
+                                    <h4>Newsletter</h4>
+                                    <form action="" method="POST" name='embedded-subscriber-form' target="_blank" id="footerSubscriberForm">
+                                        <input class="form-control" type="email" name="EMAIL" placeholder="Email Address...">
+                                        <button type="button" class="btn btn-default">Subscribe</button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 footer-widget">
+                                <div class="footer-useful-links">
+                                    <h4>Useful Links</h4>
+                                    <ul>
+                                        <li><a href="#">Contact</a></li>
+                                        <li><a href="#">The Team</a></li>
+                                        <li><a href="#">Contribute</a></li>
+                                        <li><a href="#">Help</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+                <div id="copyright" class="row">
+                    <div class="container">
+                        <p>Copyright 2017 &copy; <a href="/">ORBS</a></p>
+                    </div>
+                </div>
+                <div class="back-to-top">
+                    <button><i class="fa fa-angle-up"></i></button>
+                </div>
+            @show
+            @yield('modal');
         </div>
         <script src="{{ URL::asset('js/app.js') }}"></script>
     </body>
