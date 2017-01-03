@@ -33,8 +33,9 @@
                                 </ul>
                                 <ul class="nav navbar-nav navbar-right" style="margin-right:50px;">
                                     <li><a href="#" data-toggle="modal" data-target="#loginModal"><i class="fa fa-user"></i> Login</a></li>
-                                    <li style="padding-top: 15px">&#47;</li>
+                                    <li style="padding-top: 15px; color: #fff;">&#47;</li>
                                     <li><a href="#"><i class="fa fa-user-plus"></i> Register</a></li>
+                                    <li><a href="/admin">Dashboard</a></li>
                                 </ul>
                             </div>
                         </div>
