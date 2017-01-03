@@ -32,7 +32,7 @@
                                     <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
                                 </ul>
                                 <ul class="nav navbar-nav navbar-right" style="margin-right:50px;">
-                                    <li><a href="#"><i class="fa fa-user"></i> Login</a></li>
+                                    <li><a href="#" data-toggle="modal" data-target="#loginModal"><i class="fa fa-user"></i> Login</a></li>
                                     <li style="padding-top: 15px">&#47;</li>
                                     <li><a href="#"><i class="fa fa-user-plus"></i> Register</a></li>
                                 </ul>
@@ -143,8 +143,30 @@
                 <div class="back-to-top">
                     <button><i class="fa fa-angle-up"></i></button>
                 </div>
+                <div id="loginModal" class="modal fade">
+                    <div class="vc-parent">
+                        <div class="vc-child">
+                            <div class="modal-overlay">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <button type="button" data-dismiss="modal" aria-label="Close" class="close"><i class="fa fa-close"></i></button>
+                                        <div class="modal-header"><i class="fa fa-user"></i> Login</div>
+                                        <div class="modal-body">
+                                            <form action="" method="post">
+                                                <label for="username">Username</label>
+                                                <input type="text" name='username' placeholder="Username" class="form-control">
+                                                <label for="password">Password</label>
+                                                <input type="password" name="password" class="form-control">
+                                                <button type="submit" name="login" class="submit-btn">Login</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             @show
-            @yield('modal')
         </div>
         <script src="{{ URL::asset('js/app.js') }}"></script>
     </body>

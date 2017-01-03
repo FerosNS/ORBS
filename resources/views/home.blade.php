@@ -181,7 +181,7 @@
                 <div class="content-sidebar-widget">
                     <div class="content-list-header clearfix">
                         <span class="content-list-header-title"><i class="fa fa-users"></i> Total Members</span>
-                        <span class="content-list-header-toggle-btn">i.fa.fa-minus</span>
+                        <span class="content-list-header-toggle-btn"><i class="fa fa-minus"></i></span>
                     </div>
                     <div class="content-list-content">
                         <div class="content-sidebar-widget-stats">
@@ -194,7 +194,7 @@
                 <div class="content-sidebar-widget">
                     <div class="content-list-header clearfix">
                         <span class="content-list-header-title"><i class="fa fa-bar-chart"></i> Statistics</span>
-                        <span class="content-list-header-toggle-btn">i.fa.fa-minus</span>
+                        <span class="content-list-header-toggle-btn"><i class="fa fa-minus"></i></span>
                     </div>
                     <div class="content-list-content">
                         <div class="content-sidebar-widget-stats">
@@ -205,12 +205,5 @@
                 </div>
             </div>
         </div>
-    </div>
-@endsection
-
-
-@section('modal')
-    <div id="loginModal" class="modal fade">
-
     </div>
 @endsection

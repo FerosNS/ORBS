@@ -7852,6 +7852,10 @@ button.btn-default:hover i {
   background-color: #ff6c2c;
 }
 
+.content-list ul li:hover > .content-list-content-icon i {
+  color: #fff;
+}
+
 .content a, .content i {
   color: #fff;
   text-decoration: none;
@@ -7866,6 +7870,10 @@ button.btn-default:hover i {
   background-color: #293a4a;
   white-space: nowrap;
   position: relative;
+}
+
+.content-list-header:hover > .content-list-header-toggle-btn {
+  opacity: 0.9;
 }
 
 .content-list-header-title {
@@ -8184,6 +8192,82 @@ button.btn-default:hover i {
   border-image-repeat: initial;
   font-size: 24px;
   line-height: 28px;
+}
+
+.vc-parent {
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+
+.vc-child {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#loginModal .modal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#loginModal .modal-dialog {
+  max-width: 345px;
+  margin: 100px auto;
+  padding: 0 15px;
+}
+
+#loginModal .modal-content {
+  border-radius: 0;
+}
+
+#loginModal .modal-content button.close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  filter: alpha(opacity=100);
+  color: #fff;
+  font-size: 28px;
+  font-weight: 100;
+  opacity: 1;
+  outline: 0;
+}
+
+#loginModal .modal-header {
+  color: #fff;
+  background-color: #ff6c2c;
+  border: none;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+#loginModal .modal-header i.fa {
+  margin-right: 10px;
+}
+
+#loginModal .modal-body form {
+  overflow: hidden;
+}
+
+#loginModal .modal-body .form-control {
+  border-radius: 0;
+  margin-bottom: 15px;
+  box-shadow: none;
+  border: 1px solid #999;
+}
+
+#loginModal .modal-body .submit-btn {
+  color: #fff;
+  background-color: #293a4a;
+  padding: 10px 30px;
+  border: none;
+  text-transform: uppercase;
+  outline: 0;
+  -webkit-transition: background-color .25s ease-in-out;
+  transition: background-color .25s ease-in-out;
 }
 
 /*# sourceMappingURL=app.css.map */
