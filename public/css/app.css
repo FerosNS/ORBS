@@ -7694,6 +7694,7 @@ body {
 header {
   position: relative;
   min-height: 335px;
+  margin-bottom: -25px;
 }
 
 .navbar-brand {
@@ -7712,7 +7713,6 @@ header {
 
 #main-nav {
   position: relative;
-  top: -25px;
   color: #fff;
   background: #293a4a;
   vertical-align: baseline;
@@ -7784,7 +7784,6 @@ button.btn-default:hover i {
 
 .content {
   position: relative;
-  top: -25px;
   background-color: #243240;
   padding: 20px 0;
 }
@@ -7909,8 +7908,8 @@ button.btn-default:hover i {
   width: 35px;
   margin: 18px 0 0 15px;
   padding: 5px 0;
-  color: #ff6c2c;
-  border: 1px solid #ff6c2c;
+  color: #fff;
+  border: 1px solid;
   font-size: 20px;
   line-height: 24px;
   text-align: center;
@@ -8058,7 +8057,6 @@ button.btn-default:hover i {
 
 #footer {
   position: relative;
-  top: -25px;
   padding: 50px 0;
   color: #fff;
   background-color: #293a4a;
@@ -8077,12 +8075,16 @@ button.btn-default:hover i {
 .footer-widget .social ul {
   margin: 0;
   padding: 0;
-  display: inline-block;
+  display: inline;
   list-style: none;
   list-style-type: none;
   list-style-position: initial;
   list-style-image: initial;
   overflow: hidden;
+}
+
+.footer-widget .social ul li {
+  float: left;
 }
 
 .footer-widget .social ul li a {
@@ -8109,9 +8111,22 @@ button.btn-default:hover i {
   list-style-image: initial;
 }
 
+#footerSubscriberButton {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px 0;
+  border-radius: 0;
+  color: #fff;
+  background-color: #ff6c2c;
+  border-color: #ff6c2c;
+  text-transform: uppercase;
+  outline: 0;
+  -webkit-transition: color .25s ease-in-out, background-color .25s ease-in-out;
+  transition: color .25s ease-in-out, background-color .25s ease-in-out;
+}
+
 #copyright {
   position: relative;
-  top: -25px;
   padding: 20px 0 18px;
   color: #fff;
   background-color: #243240;

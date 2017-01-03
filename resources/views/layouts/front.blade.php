@@ -116,7 +116,7 @@
                                     <h4>Newsletter</h4>
                                     <form action="" method="POST" name='embedded-subscriber-form' target="_blank" id="footerSubscriberForm">
                                         <input class="form-control" type="email" name="EMAIL" placeholder="Email Address...">
-                                        <button type="button" class="btn btn-default">Subscribe</button>
+                                        <button id="footerSubscriberButton" type="button" class="btn btn-default">Subscribe</button>
                                     </form>
                                 </div>
                             </div>
@@ -144,7 +144,7 @@
                     <button><i class="fa fa-angle-up"></i></button>
                 </div>
             @show
-            @yield('modal');
+            @yield('modal')
         </div>
         <script src="{{ URL::asset('js/app.js') }}"></script>
     </body>
