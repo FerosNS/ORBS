@@ -12,9 +12,12 @@
 */
 
 Route::get('/', function () {
-    return view('home');
+    return view('front/home');
 });
-
-Route::get('/admin', function () {
+Route::post('login', 'Auth\LoginController@login');
+Route::get('/registration', function () {
+    return view('front/registration');
+});
+Route::get('/connect/admin', function () {
     return view('admin/main');
-});
+})->middleware('auth');

@@ -4,7 +4,8 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>@yield('title') - ORBS</title>
+        <meta name="csrf-token" content="{{ csrf_token() }}">
+        <title>ORBS - @yield('title')</title>
         <link rel="stylesheet" href="{{ URL::asset('css/app.css') }}">
         <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css">
     </head>
@@ -22,7 +23,7 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                               </button>
-                              <a class="navbar-brand" href="#">ORBS</a>
+                              <a class="navbar-brand" href="/">ORBS</a>
                             </div>
                             <div class="collapse navbar-collapse" id="navbar-collapse-1">
                                 <ul class="nav navbar-nav navbar-right">
@@ -34,8 +35,8 @@
                                 <ul class="nav navbar-nav navbar-right" style="margin-right:50px;">
                                     <li><a href="#" data-toggle="modal" data-target="#loginModal"><i class="fa fa-user"></i> Login</a></li>
                                     <li style="padding-top: 15px; color: #fff;">&#47;</li>
-                                    <li><a href="#"><i class="fa fa-user-plus"></i> Register</a></li>
-                                    <li><a href="/admin">Dashboard</a></li>
+                                    <li><a href="/registration"><i class="fa fa-user-plus"></i> Register</a></li>
+                                    <li><a href="/connect/admin">Dashboard</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -153,7 +154,8 @@
                                         <button type="button" data-dismiss="modal" aria-label="Close" class="close"><i class="fa fa-close"></i></button>
                                         <div class="modal-header"><i class="fa fa-user"></i> Login</div>
                                         <div class="modal-body">
-                                            <form action="" method="post">
+                                            <form action="/login" method="post">
+                                                {{ csrf_field() }}
                                                 <label for="username">Username</label>
                                                 <input type="text" name='username' placeholder="Username" class="form-control">
                                                 <label for="password">Password</label>

@@ -175,7 +175,7 @@
             <div class="col-md-3 content-sidebar">
                 <div class="content-sidebar-widget">
                     <div class="content-sidebar-widget-signup">
-                        <a href="#" class="btn btn-block">Register</a>
+                        <a href="/registration" class="btn btn-block">Register</a>
                     </div>
                 </div>
                 <div class="content-sidebar-widget">

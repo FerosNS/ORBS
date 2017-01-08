@@ -494,3 +494,40 @@ button.btn-default:hover i {
     -webkit-transition: background-color .25s ease-in-out;
     transition: background-color .25s ease-in-out;
 }
+p:last-child {
+    margin-bottom: 0;
+}
+p.message {
+    margin-top: 14px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 14px;
+    line-height: 20px;
+}
+fieldset.submit-btns {
+    text-align: center;
+    vertical-align: middle;
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-size: 0;
+}
+fieldset.submit-btns input {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    padding: 10px 0;
+    min-width: 270px;
+    margin-top: 18px;
+    margin-right: 15px;
+    margin-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 0;
+    border-radius: 0;
+    color: #fff;
+    background-color: $link-color;
+    text-transform: uppercase;
+    -webkit-transition: background-color .25s ease-in-out;
+    transition: background-color .25s ease-in-out;
+}
