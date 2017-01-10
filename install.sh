@@ -32,6 +32,7 @@ else
         sudo $APT install pip3 || exit 12
     fi
     pip3 install django || exit 14
+    pip3 install pymysql || exit 14
     if [ -s ./ORBS/_settings.example.py ]
     then
         mv ./ORBS/_settings.example.py ./ORBS/settings.py
