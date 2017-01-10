@@ -35,6 +35,7 @@ else
     if [ -s ./ORBS/_settings.example.py ]
     then
         mv ./ORBS/_settings.example.py ./ORBS/settings.py
+        echo 'Changed _settings.example.py to settings.py in the ./ORBS directory.'
     else
         if [ -s ./ORBS/settings.py ]
         then

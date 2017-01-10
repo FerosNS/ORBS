@@ -13,10 +13,9 @@ Getting setup for Development
 
 > **Initial Setup:**
 
-> - Change the _settings.example.py file to settings.py and add in your environment information. This file will not be pushed out, except on the production server.
-> - Run the install script if you need python, pip, or Django.
-> - Set up your own MySQL installation and set it up for python. Either connect an existing SQL installation or install it through MySQL
-> - Run `python manage.py migrate` to install the current migration.
+> - Run the install script if you need python, pip, or Django. This will also set up your settings.py file.
+> - Set up your own MySQL installation and set it up for python. Either connect an existing SQL installation or connect it through a python-MySQL connection. Once you do this you need to input the correct information in your settings.py file.
+> - Run `python manage.py migrate` to install the current migration of the database.
 > - Run `python manage.py runserver` to start up the development server.
 
 That's it! You should be good to go to continue development. If you need help with the framework, check out [Django's Website](https://docs.djangoproject.com/en/1.10/) to view the full documentation.
