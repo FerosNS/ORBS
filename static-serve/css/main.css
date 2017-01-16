@@ -12,9 +12,12 @@ header {
     border: 0;
     color: #fff;
 }
-.navbar-brand {
-    font-size: 1.75em;
+.navbar-default .navbar-nav > li > a {
     color: #fff;
+}
+a.navbar-brand {
+    font-size: 1.75em;
+    color: #fff !important;
 }
 .header-content {
     position: absolute;
@@ -153,7 +156,7 @@ button.btn-default:hover i {
     opacity: 0.8;
 }
 .content-list-header {
-    background-color: ;
+    background-color: #293a4a;
     white-space: nowrap;
     position: relative;
 }
