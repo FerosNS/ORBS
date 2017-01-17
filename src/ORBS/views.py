@@ -9,3 +9,19 @@ def home(request):
         "background": 'img/header_img.jpg'
     }
     return HttpResponse(page.render(context, request))
+
+def registration(request):
+    page = loader.get_template('views/registration.html')
+    context = {
+        "title" : 'User Registration',
+        "background": 'img/header_img.jpg'
+    }
+    return HttpResponse(page.render(context, request))
+
+def signup(request):
+    page = loader.get_template('views/signup.html')
+    context = {
+        "title" : 'User Signup',
+        "background": 'img/header_img.jpg'
+    }
+    return HttpResponse(page.render(context, request))
